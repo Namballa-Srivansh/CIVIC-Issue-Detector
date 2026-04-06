@@ -74,7 +74,8 @@ function App() {
     formData.append('image', selectedImage)
 
     try {
-      const res = await fetch('http://localhost:5000/predict', {
+      const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+      const res = await fetch(`${BACKEND_URL}/predict`, {
         method: 'POST',
         body: formData,
       })
