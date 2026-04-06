@@ -10,7 +10,7 @@ master_dir = '/content/master_dataset'
 splits = ['train', 'val']
 
 classes = {
-    'potholes': {'zip': '/content/drive/MyDrive/Pothole Detection.v9i.yolov8 (1).zip', 'id': 0}, # <---- This path has been corrected
+    'potholes': {'zip': '/content/drive/MyDrive/Pothole Detection.v9i.yolov8 (1).zip', 'id': 0},
     'water_leak': {'zip': '/content/drive/MyDrive/pipeline_leakage1.v2i.yolov8.zip', 'id': 1},
     'garbage': {'zip': '/content/drive/MyDrive/Garbage.v3i.yolov8.zip', 'id': 3},
 }
