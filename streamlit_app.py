@@ -132,7 +132,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.markdown('<div class="glass-card"><h4>Upload Image</h4>', unsafe_allow_html=True)
-    uploaded_file = st.file_uploader("", type=['jpg', 'jpeg', 'png', 'webp'])
+    uploaded_file = st.file_uploader("Upload an image", label_visibility="collapsed", type=['jpg', 'jpeg', 'png', 'webp'])
     st.markdown('</div>', unsafe_allow_html=True)
     
     if uploaded_file:
