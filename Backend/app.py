@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'best (4).pt')
+MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'best.pt')
 model = YOLO(MODEL_PATH)
 
 CLASS_LABELS = {
