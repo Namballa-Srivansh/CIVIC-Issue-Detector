@@ -1,5 +1,14 @@
 import streamlit as st
 import os
+
+@st.cache_resource
+def fix_opencv():
+    os.system("pip uninstall -y opencv-python opencv-python-headless")
+    os.system("pip install opencv-python-headless")
+    return True
+
+fix_opencv()
+
 from PIL import Image
 from ultralytics import YOLO
 
