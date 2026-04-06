@@ -17,6 +17,16 @@ const ISSUE_CONFIG = {
     cssClass: 'garbage',
     description: 'Waste accumulation detected. Sanitation services should be notified.',
   },
+  Manhole: {
+    icon: '🔘',
+    cssClass: 'manhole',
+    description: 'Open or damaged manhole detected. This poses a serious pedestrian safety risk.',
+  },
+  'Fallen Tree': {
+    icon: '🌳',
+    cssClass: 'fallen-tree',
+    description: 'A fallen tree has been detected. It may block roads and cause hazards.',
+  },
   'No issue detected': {
     icon: '✅',
     cssClass: 'no-issue',
@@ -115,8 +125,10 @@ function App() {
           <p>
             Upload a photo to instantly detect{' '}
             <span className="hl-amber">potholes</span>,{' '}
-            <span className="hl-blue">pipeline leakages</span>, or{' '}
-            <span className="hl-green">garbage</span> using advanced AI.
+            <span className="hl-blue">pipeline leakages</span>,{' '}
+            <span className="hl-green">garbage</span>,{' '}
+            <span className="hl-red">manholes</span>, or{' '}
+            <span className="hl-teal">fallen trees</span> using advanced AI.
           </p>
         </header>
 
@@ -267,6 +279,20 @@ function App() {
             <div>
               <h3 className="green">Garbage</h3>
               <p className="desc">Spots waste &amp; debris accumulation</p>
+            </div>
+          </div>
+          <div className="glass-card info-card">
+            <span className="emoji">🔘</span>
+            <div>
+              <h3 className="red">Manholes</h3>
+              <p className="desc">Detects open or damaged manholes</p>
+            </div>
+          </div>
+          <div className="glass-card info-card">
+            <span className="emoji">🌳</span>
+            <div>
+              <h3 className="teal">Fallen Trees</h3>
+              <p className="desc">Identifies fallen trees blocking paths</p>
             </div>
           </div>
         </div>

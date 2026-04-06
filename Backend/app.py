@@ -9,13 +9,15 @@ app = Flask(__name__)
 CORS(app)
 
 
-MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'best.pt')
+MODEL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'best (4).pt')
 model = YOLO(MODEL_PATH)
 
 CLASS_LABELS = {
     0: "Pothole",
     1: "Pipeline Leakage",
     2: "Garbage",
+    3: "Manhole",
+    4: "Fallen Tree",
 }
 
 
