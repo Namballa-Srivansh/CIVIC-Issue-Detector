@@ -7,9 +7,7 @@ A Streamlit app that uses a YOLO model to detect urban civic issues from images.
 - Detects the following civic issues in uploaded images:
   - Pothole
   - Pipeline Leakage
-  - Garbage
-  - Manhole
-  - Fallen Tree
+  - Garbagee
 - Shows a detection result with confidence and a short issue description.
 
 ## Files
